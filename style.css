@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 #hero {
   background-image: url(./images/hero-bg.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -15,16 +18,14 @@
 
 .vl {
   background-color: #faeaea;
-  font-family: "Inter", sans-serif;
   font-weight: 800;
   margin-bottom: 10px;
-  padding: 10px 40px;
+  padding: 5px 40px;
 }
 
 .th {
   background-color: #121111;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: xx-large;
   padding: 10px 20px;
@@ -32,4 +33,132 @@
 
 #featurette {
   background-color: #deb197;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+#featurette-heading {
+  font-weight: 800;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+#featurette-heading > span {
+  border-bottom: 5px solid white;
+}
+
+#featurette-items {
+  display: flex;
+}
+
+#featurette > div {
+  padding: 0 10px;
+}
+
+#featurette > h3 {
+  font-weight: 400;
+}
+
+div > p {
+  margin: 10px 0;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#food,
+#concert,
+#garden {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#food {
+  background-image: url(./images/food.png);
+}
+
+#concert {
+  background-image: url(./images/music.png);
+}
+
+#garden {
+  background-image: url(./images/garden.png);
+}
+
+#tour-guide {
+  display: flex;
+  background-color: #f3dfdc;
+  /* margin: 50px; */
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  text-align: center;
+  /* width: 700px; */
+  width: 50%;
+  /* height: 200px; */
+}
+
+#tour-guide-pic {
+  background-image: url(./images/tour-guide.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 450px;
+  height: 300px;
+  border-radius: 15px 0 0 15px;
+  margin-right: 30px;
+}
+
+#tour-guide-text {
+  margin-right: 30px;
+}
+
+#tour-guide-heading {
+  margin: 30px 0 20px 0;
+}
+
+#tour-guide-intro {
+  padding: 10px 30px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 500px) {
+  .vl {
+    font-size: 25px;
+  }
+  .th {
+    font-size: 25px;
+  }
+  #featurette-heading {
+    font-size: x-large;
+  }
+  #tour-guide {
+    flex-direction: column;
+  }
+  #tour-guide-pic {
+    /* width: 310px;
+    height: 200px; */
+    margin-right: 0px;
+    border-radius: 15px 15px 0 0;
+    background-size: contain;
+    /* margin: 20px 0;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto; */
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  #featurette-items {
+    flex-direction: column;
+  }
 }
